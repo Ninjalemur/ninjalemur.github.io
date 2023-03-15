@@ -4,7 +4,7 @@ title: about
 permalink: /
 #subtitle: <a href='#'>Website</a>. <a href='https://www.linkedin.com/in/gerardtchan/'>LinkedIn</a>.
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
 social: true  # includes social icons at the bottom of the page
 ---
 
