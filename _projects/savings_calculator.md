@@ -9,7 +9,7 @@ The Savings Calculator Spreadsheet is a tool designed to help individuals calcul
 
 Do make your own copy for yourself via "File" > "Make a copy".
 
-Do share your feedback on the calculator via the feedback form <a href="https://docs.google.com/forms/d/12nZ9wkob9Tmg9HqVHN-IEpG_HUIq2gxCxDd6VJo1aI8!">feedback form</a>.
+Do share your feedback on the calculator via the <a href="https://docs.google.com/forms/d/12nZ9wkob9Tmg9HqVHN-IEpG_HUIq2gxCxDd6VJo1aI8!">feedback form</a>.
 
 ## Contents
 * This will become a table of contents (this text will be scrapped).
@@ -50,7 +50,7 @@ The Savings Calculator calculates the portfolio/savings value of the person or c
 Note that three years of retirement expenses (adjusted for inflation) are held as cash. In case of an economic downturn, this pool of cash aims to reduce the need to sell assets from your portfolio during a downturn.
 
 ## The Plan tab
-The Plan tab is where the action happens. You can key in your desired parameters, and the Savings Calculator will estimate how your savings will look like over time, as visualised by the charts on the right.
+The Plan tab is where the action happens. You can key in your desired parameters on the left, and the Savings Calculator will estimate how your savings will look like over time, as visualised by the charts on the right.
 
 {% include figure.html path="assets/img/savings_calc/savings_calc_plan.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
@@ -105,3 +105,98 @@ If you selected **Savings Committments** as your Savings Strategy earlier, here 
 
 ### Desired Retirement Income (Today's dollars)
 - **Annual Amount / Monthly Amount:** Select whether you would like to specify your retirement income monthly or annually, and key in that number. Whichever you select, the other will be computed and displayed for you in the following row. You don't need to key in an increment number here. That will be computed based on the inflation number you entered earlier.
+
+### Dates and Targets
+- **Birth Year:** Enter the Birth year for each person. This is used to compute CPF Life start date if enabled, or retirement year if you enter a retirement age.
+- **Retirement Age/Year:** Select whether you wish to enter a retirement age or retirement year, and key in that value. Whichever you select, the other will be computed and displayed for you in the following row. 
+- **Age to live till:** Enter an age that your retirement savings need to support you until.
+
+### CPF
+- **CPF Active?:** Key in Yes or No, depending on whether CPF is active for you. Note that Singapore Citizens and Permanent Residents have CPF active, with no choice in the matter.
+- **CPF Life Premium Choice:** CPF Life has several choices of premiums: the Basic Retirement Sum (BRS), Full Retirement Sum (FRS), and Enhanced Retirement Sum (ERS). The larger the premium paid to CPF Life, the larger the lifelong payouts will be. 
+- **Top Up Retirement Sum if short:** Select Yes if you want to top up your CPF Life Premium up to your selected Retirement Sum amount if your CPF account has less than the desired sum at age 55. Required funds will be withdrawn from your portfolio and transferred to your CPF.
+- **CPF OA starting:** Enter the current starting amount of funds in your CPF OA account.
+- **CPF SA starting:** Enter the current starting amount of funds in your CPF SA account.
+- **CPF MA starting:** Enter the current starting amount of funds in your CPF MA account.
+- **CPF RA starting:** Enter the current starting amount of funds in your CPF RA account.
+- **Annual CPF OA drain:** Enter any routine expenses paid for by your CPF OA (eg housing loan)
+- **Annual CPF MA drain:** Enter any routine expenses paid for by your CPF MA (eg routine medical treatment)
+- **CPF OA drain end year:** Enter the year your routine CPF OA expenses are expected to end (eg housing loan end date)
+- **CPF MA drain end year:** Enter the year your routine CPF OA expenses are expected to end (eg treatment completion date)
+
+After keying in all the parameters, if you do not need to instruction guide boxes in blue, do close them by clicking on the "-" sign above column D. This will reduce screen space needed.
+
+{% include figure.html path="assets/img/savings_calc/savings_calc_close_instructions.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
+# The Charts
+The charts help to visualise how our plan plays out over time, based on the parameters we put in.
+
+## Annual % Withdrawal Rate Chart
+On the top right, the chart displaying the annual percentage withdrawal rate over time is shown.
+
+{% include figure.html path="assets/img/savings_calc/savings_calc_withdrawal_rate.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
+This chart shows what percentage of our portfolio we are withdrawing each year. This is one of the main charts I look at to assess how comfortable I am with the amount of savings entered into the plan.
+
+In the chart above, we have a fairly comfortable amount of savings, with withdrawal rates gradually increasing from around 2.5% to 3% over the course of retirement. The initial temporary spike is when we are withdrawing exclusively from the portfolio before CPF life kicks in. With CPF Life paying out, we need to withdraw less from our portfolio, and have a lower withdrawal rate.
+
+If we don't have sufficient savings to support our retirement income, the chart will trend upwards towards 100% or more, then drop to negative once the portfolio is depleted. In less drastic situations, the withdrawal rate might creep up over time to uncomfortable levels (eg 50%). These situations are undesirable, as they signal a high chance of running out of retirement savings, either with or without a market downturn.
+
+There are different schools of though around how to manage withdrawal rates over one's lifetime. Some feel it's appropriate to deplete your savings just before you die, and so 50-100% withdrawal rate in your final year is acceptable. Others prefer to be able to keep their withdrawal rates below 4%. Selecting an acceptable withdrawl rate is a whole topic in and of itself, and we won't delve into it here.
+
+To lower withdrwal rates and increase the chances of our retirement savings lasting through retirement, there are several options
+- Savings Strategy independent
+    - Retire later
+    - Lower retirement income
+- Free Cash Strategy
+    - Increase your salary
+    - Increase your salary increment
+    - Reduce your pre-retirement expenses
+- Savings Committment Strategy
+    - Increase the amount you save each month or year
+    - Increase your savings increment
+
+On the flip side, it's possible that you might find that you have a withdrawal rate that is very low (less than 2%) and getting lower over time. This suggests that your savings are growing at a rate faster than your inflation-adjusted retirement income consumes. This suggests that you have some financial leeway that you can make use of. Essentially, you have the liberty of experimenting with doing the opposite of what we outlined previously.
+- Savings Strategy independent
+    - Retire earlier
+    - Increase retirement income
+- Free Cash Strategy
+    - Have a lower salary
+    - Have a lower salary increment
+    - Increase your pre-retirement your expenses
+- Savings Committment Strategy
+    - Reduce the amount you save each month or year
+    - Reduce your savings increment
+
+## Savings Value Chart
+Next we have a chart that shows how much is in our savings portfolio each year, broken down into Cash (our 3 year buffer), Low Risk Assets, and High Risk Assets.
+
+{% include figure.html path="assets/img/savings_calc/savings_calc_savings_value.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
+Do note that the numbers are not inflation adjusted (ie they are nominal). 
+
+Usually, we expect to see the chart trending upwards as it keeps up with inflation over time. If the chart goes flat or trends down, there's a risk that our portfolio isn't growing enough to outpace inflation, and we might be at a higher risk of running out of funds. This visual is less sensitive to diagnosing overall sustainability than the Withdrawal Rate chart, so definitely don't skip over that.
+
+## Contributions
+Finally, we have a chart that shows how much we contribute to our retirement savings each year.
+
+{% include figure.html path="assets/img/savings_calc/savings_calc_savings_contributions.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
+This chart is especially useful if you are planning for two people, and you might retire at different times. It will give a sense of how the savings contributions evolve over time. 
+
+# Assumptions
+## Income tax rates and no capital gains tax
+This calculator is tailored for the Singapore context, so Singapore personal income tax rates are used for the income tax calculation in the Free Cash Strategy.
+
+Singapore also has no capital gains tax, so these are not factored in to the calculator.
+
+## Return Rates of assets
+The calculator accepts any return rates for assets that you key in. It has no ability to assess what rates are feasible or possible. Do seek formal financial guidance in this area for advice that is specific and suitable to you.
+
+## Rate of return is average and constant
+The calculator has no ability to predict or simulate market downturns and fluctuations. It will only increment your portfolio by your selected rates of return, each year, every year. There WILL be market downturns in the future. This calculator can't predict them and take them into account. Bear this in mind when inspecting results, as 100% high yield assets will always be the allocation that the calculator will estimate is providing the most savings.
+
+In reality, market fluctuations occur, and most people will want a mix of asset classes to ride out those fluctuations.
+
+# Conclusion
+I hope you found this calculator useful. Feedback is definitely welcome! Do share your feedback via the the <a href="https://docs.google.com/forms/d/12nZ9wkob9Tmg9HqVHN-IEpG_HUIq2gxCxDd6VJo1aI8!">feedback form</a>! Thank you!
