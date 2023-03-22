@@ -5,11 +5,11 @@ description: A Calculator for Retirement Savings in Google Sheets
 img: assets/img/temperate_forest_scenic.jpg
 ---
 
-The Savings Calculator Spreadsheet is a tool designed to help individuals calculate how much they can save and accumulate based on different levels of savings and expenditures. As of 20 March 2023, the latest version of the tool is v2.4, and is available to the public via <a href="https://docs.google.com/spreadsheets/d/1wKXRlBWTYL16pFi9IdsrThDQC5q2jKmeqlKNkPufefI"> this link</a>. 
+The Retirement Savings Calculator Spreadsheet is a tool designed to help individuals calculate how much they can save and accumulate based on different levels of savings and expenditures. As of 20 March 2023, the latest version of the tool is v2.4, and is available to the public via <a href="https://docs.google.com/spreadsheets/d/1wKXRlBWTYL16pFi9IdsrThDQC5q2jKmeqlKNkPufefI"> this link</a>. 
 
 Do make your own copy for yourself via "File" > "Make a copy".
 
-Do share your feedback on the calculator via the <a href="https://docs.google.com/forms/d/12nZ9wkob9Tmg9HqVHN-IEpG_HUIq2gxCxDd6VJo1aI8!">feedback form</a>.
+Do share your feedback on the calculator via the <a href="https://docs.google.com/forms/d/e/1FAIpQLScswYDxLhregN4xUfROgkLVpPJItCGwtvXNHUHqep_RTe5lrw/viewform?usp=sharing">feedback form</a>.
 
 ## Contents
 * This will become a table of contents (this text will be scrapped).
@@ -17,15 +17,15 @@ Do share your feedback on the calculator via the <a href="https://docs.google.co
 
 ## Purpose
 
-The purpose of this spreadsheet is to provide a basic calculation of how much one can accumulate and consume at various levels of savings and expenditure. The tool is useful for individuals who are planning to save money for retirement and want to estimate how much savings they will need to support spending in retirement.
+The purpose of this retirement savings spreadsheet is to provide individuals in Singapore with a simple and customised tool to calculate how much they need to save for retirement based on their expected expenditures and income. This spreadsheet takes into account Singapore's specific income tax and pension CPF values to provide more tailored calculations. By using this tool, I hope that you can gain a better understanding of your retirement savings needs and make informed decisions about your financial future.
 
 [Back to Top](#Contents)
 
 ## Why Google Sheets?
 
-The Savings Calculator Spreadsheet was created using Google Sheets as the tool of choice. One maing reason was that it would be free for me to develop, free for me to distribute, and free for users to use. Additionally, using Google Sheets ensures that the user's data is kept under their control, without giving me access to any of it. This is an essential feature as people would be keying in their own financial information to do their planning.
+The Savings Calculator Spreadsheet was created using Google Sheets as the tool of choice. One maing reason was that it would be free for me to develop, free for me to distribute, and free for users to use. Additionally, using Google Sheets instead of a web application and database ensures that the user's data is kept under their control, without giving me or a third party access to any of it. This is an essential feature as people would be keying in their own financial information to do their planning.
 
-As a security choice, I have also chosen not to use any scripts in the calculator. I wouldn't feel safe enabling scripts on a spreadsheet from some guy on the internet before keying in financial data, and neither should you.
+As a security consideration, I have also chosen not to use any scripts in the calculator. I wouldn't feel safe enabling scripts on a spreadsheet from some guy on the internet before keying in financial data, and neither should you.
 
 [Back to Top](#Contents)
 
