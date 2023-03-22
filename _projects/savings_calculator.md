@@ -9,6 +9,6 @@ I created a Retirement Savings Calculator in Google Sheets.
 
 Access it  <a href="https://docs.google.com/spreadsheets/d/1wKXRlBWTYL16pFi9IdsrThDQC5q2jKmeqlKNkPufefI">here</a> and make a copy for yourself (File > Make a copy).
 
-Do share your feedback on the calculator via the feedback form <a href="https://docs.google.com/forms/d/12nZ9wkob9Tmg9HqVHN-IEpG_HUIq2gxCxDd6VJo1aI8!">feedback form</a>.
+Do share your feedback on the calculator via the feedback form <a href="https://docs.google.com/forms/d/e/1FAIpQLScswYDxLhregN4xUfROgkLVpPJItCGwtvXNHUHqep_RTe5lrw/viewform?usp=sharing">feedback form</a>.
 
 A more detailed write up is incoming! Stay tuned!
