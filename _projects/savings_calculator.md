@@ -5,19 +5,19 @@ description: A Calculator for Retirement Savings in Google Sheets
 img: assets/img/temperate_forest_scenic.jpg
 ---
 
-The Retirement Savings Calculator Spreadsheet is a tool designed to help individuals calculate how much they can save and accumulate based on different levels of savings and expenditures. As of 20 March 2023, the latest version of the tool is v2.4, and is available to the public via <a href="https://docs.google.com/spreadsheets/d/1wKXRlBWTYL16pFi9IdsrThDQC5q2jKmeqlKNkPufefI"> this link</a>. 
+The Retirement Savings Calculator Spreadsheet is a tool designed to help individuals calculate how much they can save and accumulate based on different levels of savings and expenditures. As of 20 March 2023, the latest version of the tool is v2.4, and is  publicly available [here](https://docs.google.com/spreadsheets/d/1wKXRlBWTYL16pFi9IdsrThDQC5q2jKmeqlKNkPufefI). 
 
 Do make your own copy for yourself via "File" > "Make a copy".
 
-Do share your feedback on the calculator via the <a href="https://docs.google.com/forms/d/e/1FAIpQLScswYDxLhregN4xUfROgkLVpPJItCGwtvXNHUHqep_RTe5lrw/viewform?usp=sharing">feedback form</a>.
+Do share your feedback on the calculator via the [feedback form](https://docs.google.com/forms/d/e/1FAIpQLScswYDxLhregN4xUfROgkLVpPJItCGwtvXNHUHqep_RTe5lrw/viewform?usp=sharing).
 
 ## Contents
 * This will become a table of contents (this text will be scrapped).
 {:toc}
 
-## Purpose
+## Objective
 
-The purpose of this retirement savings spreadsheet is to provide individuals in Singapore with a simple and customised tool to calculate how much they need to save for retirement based on their expected expenditures and income. This spreadsheet takes into account Singapore's specific income tax and pension CPF values to provide more tailored calculations. By using this tool, I hope that you can gain a better understanding of your retirement savings needs and make informed decisions about your financial future.
+The objective of this retirement savings spreadsheet is to provide individuals in Singapore with a simple and locally relevant tool to calculate how much they need to save for retirement based on their expected expenditures and income. This spreadsheet takes into account Singapore's specific income tax and pension (CPF) values to provide more locally relevant estimates. By using this tool, I hope that you can gain a better understanding of your retirement savings needs and make informed decisions about your financial future.
 
 [Back to Top](#Contents)
 
@@ -31,7 +31,7 @@ As a security consideration, I have also chosen not to use any scripts in the ca
 
 ## Getting your copy of the Savings Calculator
 
-Once you have opened my public copy of the Savings Calculator, go to "File" > "Make a copy" to make a copy for yourself. The public copy is not editable, so that users cannot see each others inputs.
+Once you have opened the public copy of the Savings Calculator, go to "File" > "Make a copy" to make a copy for yourself. The public copy is not editable, to prevent users from making their personal financial information public.
  
 {% include figure.html path="assets/img/savings_calc/savings_calc_make_copy.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
@@ -41,11 +41,11 @@ Select a folder to save your own copy in, and press "Make a copy"
 
 ## How does it work?
 The Savings Calculator calculates the portfolio/savings value of the person or couple over time. This is based on the following sequence of events
-1. Savings starts from the year **Start Saving in Year**
-1. Each year before retirement, the portfolio grows based on returns as well as contributions to savings.
-1. After retirement, contributions stop, and withdrawals commence.
-1. If CPF is enabled, CPF Life Payouts will start at the CPF LIFE payout age. This will reduce the amount that is withdrawn from the portfolio to support retirement
-1. At each person's death age, they will stop withdrawing their share of expenses.
+1. **Savings starts** from the year Start Saving in Year
+1. Each year **before retirement**, the portfolio grows based on returns as well as contributions to savings.
+1. **After retirement**, salaried income, portfolio contributions, and pre-retirement expenses stop, and portfolio withdrawals to fund retirement income commence.
+1. If CPF is enabled, **CPF Life Payouts** will start at the CPF LIFE payout age. This will reduce the amount that is withdrawn from the portfolio to support retirement
+1. At each person's **death** age, they will stop withdrawing their share of expenses.
 
 Note that three years of retirement expenses (adjusted for inflation) are held as cash. In case of an economic downturn, this pool of cash aims to reduce the need to sell assets from your portfolio during a downturn.
 
@@ -113,16 +113,16 @@ If you selected **Savings Committments** as your Savings Strategy earlier, here 
 
 ### CPF
 - **CPF Active?:** Key in Yes or No, depending on whether CPF is active for you. Note that Singapore Citizens and Permanent Residents have CPF active, with no choice in the matter.
-- **CPF Life Premium Choice:** CPF Life has several choices of premiums: the Basic Retirement Sum (BRS), Full Retirement Sum (FRS), and Enhanced Retirement Sum (ERS). The larger the premium paid to CPF Life, the larger the lifelong payouts will be. 
+- **CPF Life Premium Choice:** CPF Life has several choices of premiums. In increasing order, the options are the Basic Retirement Sum (BRS), Full Retirement Sum (FRS), and Enhanced Retirement Sum (ERS). The larger the premium paid to CPF Life, the larger each of the monthly lifeling payouts will be. 
 - **Top Up Retirement Sum if short:** Select Yes if you want to top up your CPF Life Premium up to your selected Retirement Sum amount if your CPF account has less than the desired sum at age 55. Required funds will be withdrawn from your portfolio and transferred to your CPF.
 - **CPF OA starting:** Enter the current starting amount of funds in your CPF OA account.
 - **CPF SA starting:** Enter the current starting amount of funds in your CPF SA account.
 - **CPF MA starting:** Enter the current starting amount of funds in your CPF MA account.
 - **CPF RA starting:** Enter the current starting amount of funds in your CPF RA account.
-- **Annual CPF OA drain:** Enter any routine expenses paid for by your CPF OA (eg housing loan)
-- **Annual CPF MA drain:** Enter any routine expenses paid for by your CPF MA (eg routine medical treatment)
-- **CPF OA drain end year:** Enter the year your routine CPF OA expenses are expected to end (eg housing loan end date)
-- **CPF MA drain end year:** Enter the year your routine CPF OA expenses are expected to end (eg treatment completion date)
+- **Annual CPF OA drain:** Enter any routine expenses paid for by your CPF OA (eg housing loan).
+- **Annual CPF MA drain:** Enter any routine expenses paid for by your CPF MA (eg routine medical treatment).
+- **CPF OA drain end year:** Enter the year your routine CPF OA expenses are expected to end (eg housing loan end date).
+- **CPF MA drain end year:** Enter the year your routine CPF OA expenses are expected to end (eg treatment completion date).
 
 After keying in all the parameters, if you do not need to instruction guide boxes in blue, do close them by clicking on the "-" sign above column D. This will reduce screen space needed.
 
@@ -182,7 +182,7 @@ Finally, we have a chart that shows how much we contribute to our retirement sav
 
 {% include figure.html path="assets/img/savings_calc/savings_calc_savings_contributions.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-This chart is especially useful if you are planning for two people, and you might retire at different times. It will give a sense of how the savings contributions evolve over time. 
+This chart is useful if you are planning for two people, and you might retire at different times. It will give a sense of how the savings contributions evolve over time. 
 
 # Assumptions
 ## Income tax rates and no capital gains tax
@@ -199,4 +199,6 @@ The calculator has no ability to predict or simulate market downturns and fluctu
 In reality, market fluctuations occur, and most people will want a mix of asset classes to ride out those fluctuations.
 
 # Conclusion
-I hope you found this calculator useful. Feedback is definitely welcome! Do share your feedback via the the <a href="https://docs.google.com/forms/d/12nZ9wkob9Tmg9HqVHN-IEpG_HUIq2gxCxDd6VJo1aI8!">feedback form</a>! Thank you!
+The Retirement Savings Calculator spreadsheet allows you to estimate how much you need to save based on factors such as your desired retirement income, CPF Life Retirement Sum, as well as retirement age.
+
+I hope you found this calculator useful. Feedback is definitely welcome! Do share your feedback via the the [feedback form](https://docs.google.com/forms/d/e/1FAIpQLScswYDxLhregN4xUfROgkLVpPJItCGwtvXNHUHqep_RTe5lrw/viewform?usp=sharing)! Thank you!

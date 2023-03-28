@@ -1,17 +1,17 @@
 ---
 layout: post
 title:  Retirement Savings Calculator v 2.4 is live!
-date: 2023-03-20 18:15:00+8
+date: 2024-03-20 18:15:00+8
 description: Hello!
 tags: financial spreadsheets
 categories: 
 ---
 
-The Retirement Savings Calculator Spreadsheet is a tool designed to help individuals calculate how much they can save and accumulate based on different levels of savings and expenditures. As of 20 March 2023, the latest version of the tool is v2.4, and is available to the public via <a href="https://docs.google.com/spreadsheets/d/1wKXRlBWTYL16pFi9IdsrThDQC5q2jKmeqlKNkPufefI"> this link</a>. 
+The Retirement Savings Calculator Spreadsheet is a tool designed to help individuals calculate how much they can save and accumulate based on different levels of savings and expenditures. As of 20 March 2023, the latest version of the tool is v2.4, and is publicly available [here](https://docs.google.com/spreadsheets/d/1wKXRlBWTYL16pFi9IdsrThDQC5q2jKmeqlKNkPufefI). 
 
 Do make your own copy for yourself via "File" > "Make a copy".
 
-Do share your feedback on the calculator via the <a href="https://docs.google.com/forms/d/e/1FAIpQLScswYDxLhregN4xUfROgkLVpPJItCGwtvXNHUHqep_RTe5lrw/viewform?usp=sharing">feedback form</a>.
+Do share your feedback on the calculator via the [feedback form](https://docs.google.com/forms/d/e/1FAIpQLScswYDxLhregN4xUfROgkLVpPJItCGwtvXNHUHqep_RTe5lrw/viewform?usp=sharing).
 
 ## Stuff
 - summary intro
