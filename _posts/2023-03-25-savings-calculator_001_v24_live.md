@@ -97,7 +97,7 @@ From my experimentation, I've found that withdrawal rates above 5% are usually u
 - **Tell you what stocks/bonds/property/commodities to buy**: Like portfolio allocation, that's a whole topic beyond the scope of the spreadsheet
 - **Help you estimate your income or expenses**: That's beyond the scope of this spreadsheet. For estimating expenses, I have used some methods to estimate and manage my expenses. Let me know in the [feedback form](https://docs.google.com/forms/d/e/1FAIpQLScswYDxLhregN4xUfROgkLVpPJItCGwtvXNHUHqep_RTe5lrw/viewform?usp=sharing) if this is something you'd like to see a future post about!
 
-## What's Next?
+## What Next?
 After tinkering with the spreadsheet and getting a sense of how much you need to save to support a certain amount of retirement spending, it's time to refine those estimates. There's much more to consider in a retirement plan than how much you want to save and when you want to retire.
 
 - Other parts of a financial plan to consider
@@ -120,7 +120,7 @@ After tinkering with the spreadsheet and getting a sense of how much you need to
     - UP has the capability to let you know when you run out of cash, or have too much savings, and advise you accordingly.
     - Disclosure: I have worked with the company behind UP in the past, but have no financial interest or any other relationship with them at this time.
 
-## What do you want hear more about next?
+## Thank you!
 Thanks for reading! I hope you found it helpful and enjoyable.
 
 What would you like to hear more about next? Do let me know in the feedback form!
