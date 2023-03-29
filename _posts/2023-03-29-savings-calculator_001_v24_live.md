@@ -2,7 +2,7 @@
 layout: post
 title:  Retirement Savings Calculator v 2.4 is live!
 date: 2023-03-29 17:03:00+8
-description: Hello!
+description: How the Savings Calculator came to be, and some key features
 tags: financial spreadsheets
 categories: 
 ---
