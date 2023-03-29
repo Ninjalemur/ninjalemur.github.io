@@ -21,6 +21,8 @@ Do share your feedback on the calculator via the [feedback form](https://docs.go
 ## Overview
 I've created a [Retirement Savings calculator](https://docs.google.com/spreadsheets/d/1wKXRlBWTYL16pFi9IdsrThDQC5q2jKmeqlKNkPufefI) in Google Sheets that I use to help me plan out how to save for retirement. This post will be talking more about my rationale and thoughts behind the creation of the calculator, and not so much of a guide to using the calculator. If you are looking for a usage guide, [this](https://www.gerardchan.com/projects/savings_calculator) is the page you seek.
 
+{% include figure.html path="assets/img/savings_calc/savings_calc_plan.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
 ## How it started
 When I first started working, I was faced with the decision of how much of my income should I save in order to have enough for retirement. Understandably, that question can't be answered without asking other questions like "When do I plan to retire?" or "How much do I need to retire?". 
 
@@ -79,11 +81,17 @@ If you have access to CPF Life, it will likely form an excellent base for your r
 For the spreadsheet calculator, I have chosen to have CPF Life start paying out on the Standard Plan at the earliest possible age. Based on my calculations, the Escalating plan and the increased monthly payout from the deferred payout start date simply took too long to break even, usually in your late 80s. For simplicity's sake, I decided to focus on implementing the plan that would be the most supportive of generating income to support retirement: Standard Plan with no deferred payout start.
 
 ### Chart: Savings Value
+
+{% include figure.html path="assets/img/savings_calc/savings_calc_savings_value.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
 This is the chart that I initially built to monitor the value of the portfolio over time, both before and after retirement. If the upward growth of the chart slows or reverses, it signals that portfolio growth is not keeping up with inflation-adjusted retirement spending. The chart also gives a sense of the magnitude of the problem, and how soon it occurs. Does the current plan start running out of money in the last few years of life? Or does it run out of money just after retirement?
 
 I did find the chart useful for detecting major issues in my retirement plan, but I did find that it was challenging to notice the slowdown in growth, especially later in retirement when absolute numbers are much larger. How would I be able to detect such signs earlier? This would be important in hedging against the risk of living longer than the planned age.
 
 ### Chart: Withdrawal Rate
+
+{% include figure.html path="assets/img/savings_calc/savings_calc_withdrawal_rate.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+
 In order to detect signs of the portfolio not being able to keep up with inflation adjusted retirement savings, the withdrawal rate chart was created. The withdrawal rate indicates what percentage of the portfolio is withdrwan in a given year. A 4% withdrawal rate in a given year means 4% of the portfolio was withdrawn that year. A rising withdrawal rate would indicate the portfolio losing ground against inflation adjusted retirement spending, as well as by how much.
 
 From my experimentation, I've found that withdrawal rates above 5% are usually unsustainable unless one is more optimistic about future market returns than I am. Based on my own preferences, I intend to save up enough for retirement such that my withdrawal rate doesn't need to increase over time to support my retirement spending. This also gives me a comfortable amount of buffer room when (not if but when) there is a market downturn during retirement.
