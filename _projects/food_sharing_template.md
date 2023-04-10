@@ -26,7 +26,7 @@ This spreadsheet allows a quick and easy way to split the cost of meals with fri
 Once you have opened the public copy of the Food Sharing Template, go to "File" > "Make a copy" to make a copy for yourself. I usually create a new copy for each meal to be split, so that records of old meals are available if anyone asks to double check the numbers.
 
 ### Configuring taxes
-In the top left corner of the sheet, do key in the percentage amounts of the applicable taxes, and check the box if that tax is relevant to this bill. These taxes will be added to the prices that we will key in later. If taxes are not applicable, or already included in pricing, do uncheck the boxes here so as not to incorrectly apply these tax rates.
+Enter the applicable tax percentages in the top left corner of the sheet and check the relevant box. The taxes will be added to the prices entered later. If taxes are not applicable or already included in the pricing, uncheck the boxes to avoid applying the tax rates incorrectly.
 
 {% include figure.html path="assets/img/food_share/food_sharing_template-taxes.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
@@ -36,24 +36,25 @@ Enter the names of the people sharing the bill in the blue cells at the top of t
 {% include figure.html path="assets/img/food_share/food_sharing_template-enter_names.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ### Keying in Food and Drinks
-Next, key in the menu prices and quantities of each item into the purple section of the spreadsheet. If menu prices are before tax, do remember to key in and enable the taxes in the top left corner of the spreadsheet.
+In the purple section of the spreadsheet, enter the menu prices and quantities of each item. If menu prices exclude tax, enable and enter the applicable taxes in the top left corner, as covered in the previous section. 
 
-The columns "Place" and "Item" are optional and not consumed by the calculations, but they are helpful in making the data more human-readable, and allow you and your friends to more easily check that the data was entered correctly.
+The "Place" and "Item" columns are optional and do not affect the calculations. However, they make the data more readable and allow you and your friends to easily verify the accuracy of the entered data.
 
 {% include figure.html path="assets/img/food_share/food_sharing_template-food_drinks.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ### Entering who shared what
-After keying in the food and drink items into the purple area, enter the sharing ratios of who shared what items. Some points to note on the sharing ratios
-- Sharing ratios do not need to add up to 1
-- Equal ratios mean that everyone shared it equally
-- Zero means that someone will not be contributing to the cost of that item
-- A ratio of 2 means that the person will be contributing twice the amount for someone with a sharing ratio of 1. In the picture below, Bob ate two-thirds of the rack of ribs, and Alice ate one-third. The sharing ratio of 2 for Bob is double Alice's sharing ratio of 1.
-- Every item in the food and drink list (purple cells) must have at least one non-zero sharing ratio
+After entering the food and drink items in the purple section, input the sharing ratios of each person for the items shared. Note the following regarding sharing ratios:
+
+- Ratios do not need to add up to 1.
+- Equal ratios indicate an equal sharing contribution.
+- A zero ratio means that the person did not share the item and will not contribute to its cost.
+- A ratio of 2 means that the person will contribute twice the amount of someone with a ratio of 1. For instance, in the example below, Bob had a ratio of 2 for the rack of ribs, indicating that he ate two-thirds of it, while Alice had a ratio of 1, indicating she ate one-third.
+- Every item (row) on the food and drink list (purple cells) must have at least one non-zero sharing ratio (orange cells).
 
 {% include figure.html path="assets/img/food_share/food_sharing_template-sharing_ratio.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ### Total Cost per person
-Once the food and drink prices, and the sharing ratios have been keyed in, total costs per person are computed and displayed in the green cells at the bottom of the sheet.
+The green cells at the bottom of the sheet display the computed total costs per person after the food and drink prices and sharing ratios have been entered.
 
 {% include figure.html path="assets/img/food_share/food_sharing_template-total_cost.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
