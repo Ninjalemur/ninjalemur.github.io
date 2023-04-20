@@ -2,7 +2,7 @@
 layout: page
 title: Food Sharing Template
 description: This Spreadsheet can help you calculate how to split meal costs with friends
-img: assets/img/food_share/pizza_share.jpg.jpg
+img: assets/img/food_share/pizza_share.jpg
 ---
 
 The Food Sharing Template Spreadsheet helps to calculate how much each person in the group should chip in for a meal based on what they had. The template can be found [here](https://docs.google.com/spreadsheets/d/1F5CDsXQAZ62IvBPp7RztBdZ7YekMTAaphz3FncaKmeI/edit?usp=share_link). 
