@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Google Sheets techniques for performance and readability
-date: 2023-04-20 08:33:00+8
+date: 2023-04-27 08:33:00+8
 description: Make your Google Sheets faster and easier to maintain with these tips
 tags: spreadsheets
 categories: 
