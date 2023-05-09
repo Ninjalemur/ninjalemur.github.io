@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Google Sheets techniques (Episode 2)
-date: 2023-04-28 08:33:00+8
+date: 2023-05-11 08:33:00+8
 description: Advanced tips for working with Array Formulas
 tags: spreadsheets arrayformulas
 categories: 
@@ -20,10 +20,10 @@ In our example use case, we have a spreadsheet that helps compute the total valu
 - Inventory_Input: The data tab called that will contain data on fruits, with columns for the name of the fruits, the quantity, and the unit price of each fruit in USD
 - Interface: Our user interface tab, which contains a field for users to input a currency exchange number for USD to their local currency, and an output field computing the total value of the fruit inventory in local currency. This output field computes its output based on the data in "Inventory_Input" as well as the exchange rate input from the user
 - CALC_Inventory: A calculation tab which contains calculations 
-- MAP: The Map tab, which we will go into more detail further on
+- MAP: The Map tab, which we will go into more detail later on
 
 ## Challenges of array formulas
-When using array formulas to process data, there are two main ways to refer to the columns that we are using in our computations: full column ranges (eg A:A), or bounded ranges (eg A1:A1000). Each of them have different advantages and drawbacks. Full column formulas have a higher performance overhead, but will dynamically respond to the number of rows changing. Bounded formulas have a lower performance overhead, but by default do not respond dynamically to the number of rows changing.
+When using array formulas to process data, there are two main ways to refer to the columns that we are using in our computations: full column ranges (eg A:A), or bounded ranges (eg A1:A1000). Each of them have different advantages and drawbacks. Full column ranges have a higher performance overhead, but will dynamically respond to the number of rows changing. Bounded ranges have a lower performance overhead, but by default do not respond dynamically to the number of rows changing.
 
 When we have a large spreadsheet with many formulas and columns, it's important that performance is manageable, and that maintenance is manageable (ie we do not have to manually update many formulas each time the size of the data changes). The Map tab aims to accomplish this.
 
@@ -32,12 +32,12 @@ The Map tab consists of several key components.
 
 {% include figure.html path="assets/img/sheets_techniques/map_tab-labelled.png" class="img-fluid rounded z-depth-1" %}
 
-1. A row counter that counts the number of rows in a tab
+1. A row counter that counts the number of rows in a sheet
 2. A column checker that returns the column letter of a given column
 3. A string that concatenates sheet name, column, and rows to create a range string (eg Sheet1!A1:A10)
 4. Nameranges that refer to the ranges strings in the tab
 
-What the map tab is doing is reducing the number of time full column ranges are called in array formulas from "every time a column is referenced" to "once per data tab". This drastically reduces the performance overhead while retaining the benefit of dynamically responding to varying number of rows. How does it accomplish this via each of the components? Let's step through each of the components to find out.
+What the map tab is doing is reducing the number of time full column ranges are called in array formulas from "every time a column is referenced" to "once per data tab". This drastically reduces the performance overhead while retaining the benefit of dynamically responding to varying number of rows. How does it accomplish this via each of the components? Let's step through each of them to find out.
 
 ### Row counting
 ```
@@ -62,7 +62,7 @@ This row counting formula helps to find the maximum row in the input data tab th
     "[A-Z]+"
     )
 ```
-This formula extracts the column letter of a given column. The reason why we formularise this instead of entering a letter like "A" directly is to allow the column reference to shift left or right if we insert or delete columns. For example, if a column was inserted to to right of column A, our example reference above would start returning B instead of A. This implementation helps to reduce the maintenance needed as we expand our spreadsheet.
+This formula extracts the column letter of a given column. The reason why we formularise this instead of entering a letter like "A" directly is to allow the column reference to shift left or right if we insert or delete columns. For example, if a column was inserted to to left of column A, our example reference above would start returning B instead of A. This implementation helps to reduce the maintenance needed as we expand our spreadsheet.
 
 ### Creating a range string
 ```
@@ -80,7 +80,7 @@ This formula extracts the column letter of a given column. The reason why we for
 This formula concatenates the sheet name, column letter, and row numbers together into a range string that we can use in formulas. As the number of data rows or the columns change, the row counter and column checkers will update, and update this range string accordingly, allowing us the benefit of increased performance of bounded column ranges for our array formulas, while managing the downside of maintenance overhead. 
 
 ### Nameranges
-As is good practice, we give each of our ranges a name to refer to them by. It's much easier to understand what INDIRECT(MAP_INVENTORY_QTY) * INDIRECT(MAP_INVENTORY_UNITPRICE_LOCAL) means, compared to MAP!C10 * MAP!C17.
+As is good practice, we give each of our ranges a name to refer to them by. It's much easier to understand what INDIRECT(MAP_INVENTORY_QTY) * INDIRECT(MAP_INVENTORY_UNITPRICE_LOCAL) means, compared to INDIRECT(MAP!C10) * INDIRECT(MAP!C17).
 
 ## The Map tab as a "Map" of the data
 The map tab contains all the range strings for all the data in the entire spreadsheet. It provides a central place to look up what data a spreadsheet contains, and where it is located. This is extremely helpful for human readability, not just for making our formulas work. If we wanted to, we could even add a "Description" column where we can describe the contents of each column and turn the Map tab into a data dictionary.
