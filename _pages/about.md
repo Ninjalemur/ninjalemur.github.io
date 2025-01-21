@@ -2,24 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+#subtitle: <a href='#'>Website</a>. <a href='https://www.linkedin.com/in/gerardtchan/'>LinkedIn</a>.
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: false  # includes a list of news items
+social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm Gerard, a data analyst with a passion for user-centric products. With over 9 years of experience in industries including supply chain, real estate, and finance, I have built products to manage and plan real estate portfolios, product catalogues, workforce composition, and retirement savings. As a cross-functional project leader, I excel at collaborating with diverse teams to help them work effectively and efficiently towards success. I thrive in remote and asynchronous work environments that prioritize clear written communication and customer satisfaction.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+In my free time, I'm a cat lover and with a passion for food, games, and early retirement. I enjoy spending time with my cats, and creating tools to help me decide where to eat, what strategies to use in games, as well as plan my savings for retirement.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Do check out my site, and feel free to connect with me on socials.
